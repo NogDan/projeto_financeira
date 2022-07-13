@@ -1,0 +1,359 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'title';
+    src: url('fontes/BebasNeue-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'mustica';
+    src: url('fontes/MusticaPro-SemiBold.otf') format('opentype');
+}
+body{
+    
+    background-image: url('imagens/fundo\ slide.jpg');
+    flex-wrap: nowrap;
+    height: 590px;
+  scroll-margin: unset;
+    
+  
+}
+.total{
+   
+    padding: 0px;
+}
+
+header{
+    width: 98vw;
+     margin: auto;
+   
+}
+.titulo{
+    margin-left: 40px;
+    
+     float: left;
+    margin-top: 5px;
+    background-color: rgb(245, 245, 245);
+    width: 180px;
+    height: 62px;
+    border-radius: 8px;
+    border: 1px solid gray;
+  
+   text-align: center;
+   
+   
+}
+ 
+.img-titulo{
+    width: 165px;
+    
+   
+}
+.titulo-h2{
+    background-color: rgba(255, 255, 255, 0.897);
+    color: #033658;
+    font-weight: bolder;
+    font-size:1.1rem;
+    margin-right: 45px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    font-family: 'mustica';
+    display: flex;
+    float:right;
+    align-items: center;
+}
+.container-total{
+    padding: 10px;
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50% , -45%);*/
+    text-align: center;
+    margin: auto;
+    
+    width: 95vw;
+    height: 94%;
+    display: flex;
+   /* border: 2px solid black;*/
+    justify-content: space-around;
+}
+.slogan{
+     display:inline-block;
+     float: inline-start;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    font-family: 'title';
+    width: 550px;
+    height: 60%;
+    background-color: rgba(0, 255, 255, 0.972);
+}
+.slogan-h1{
+    color: rgb(0, 128, 43);
+    text-shadow: 2px 2px 2px white;
+    letter-spacing: 2px;
+padding: 15px 0px 10px 0px;
+}
+.slogan-p{
+    font-family: 'title';
+   font-size: 1.8rem;
+   padding: 3px;
+}
+.slogan-ul{
+    font-family: 'title';
+ font-size: 1.6rem;
+ list-style: none;
+}
+.porcento{
+    color: navy;
+}
+.container {
+   
+    height: 90%;
+    max-width: 670px;
+   display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin:0;
+    border-radius: 5px;
+    border:none;
+}
+
+.form{
+    border-radius: 8px;
+    padding: 35px 0px 35px 0px;
+    background-color: #094166f5;
+    width: 300px;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.602);
+}
+.container-result{
+    position: relative;
+    font-family: 'mustica';
+    align-items: center;
+    text-align: center;
+    display:flex;
+    padding: 30px;
+    font-size: 1.37rem;
+  width: 400px;
+  height: 591px;
+  
+}
+.res{
+   position: absolute;
+   top: 20px;
+    background-color: rgba(255, 255, 255, 0.945);
+     padding: 10px;
+   border-radius: 15px;
+    color: #063316;
+    font-size: 1.5rem;
+line-height: 30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none ;
+}
+input {
+  
+    text-decoration: none;
+    border: none;
+   /* border: 2px solid #3E445B;*/
+    border-radius: 5px;
+    outline: 0;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    font-family:'mustica';
+    font-size: 18px;
+     height: 45px;
+    width: 90%;
+    padding: 15px;
+}
+.input text{
+    font-size:3rem;
+}
+.ipt-placeholder::placeholder{
+    color: rgb(59, 59, 59);
+    font-size: 1.2rem;
+}
+
+
+
+
+.small {
+    color: whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+    font-size: 11px;
+
+}
+
+.button {
+    border: 0.5px solid white;
+    background-color: #069999;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 800;
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 14px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+ 
+}
+
+.button:hover {
+    background-color: rgba(0, 255, 255, 0.842);
+    transition: 0.3s;
+}
+.button-enviar-form  {
+    display: none;
+    position: absolute;
+    top:510px ;
+    left: 110px;
+    height: 50px;
+   width: 180px;
+   
+   font-weight: 800;
+   border-radius: 5px;
+   letter-spacing: 1.5px;
+   cursor: pointer;
+}
+
+.btn-analise{
+    cursor: pointer;
+    font-family: 'mustica';
+    font-size: 15px;
+    width: 180px;
+    background-color: #2bf607;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    border: 0.5px solid rgb(76, 222, 241);
+    color: #fff;
+    letter-spacing: 1.5px;
+
+}.btn-analise:hover{
+    background-color: chartreuse;
+}
+
+
+
+.active{
+    display:flex; 
+}
+hr{
+  
+    color: white;
+    border: 0px;
+    border-top: 1px solid white;
+}
+.bblur{
+
+    height: 100vh;
+    backdrop-filter: blur(25px);
+}
+.modal-container{
+   display: none;
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top:-0px;
+    z-index:1000;
+    justify-content: center;
+    align-items: center;
+   
+}
+.modal{
+    font-family: 'mustica';
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 35px;
+    background-color: #e6c050;
+    border-radius: 10px;
+    box-shadow:0.5px 0.5px 10px  rgba(0, 0, 0, 0.459);
+    width: 28%;
+   
+   
+}.modal h2{
+    font-size: 2.0rem;
+    padding-bottom: 5px;
+    letter-spacing: 2.2px;
+    color: white;
+}
+.modal-p{
+    
+    letter-spacing: 1px;
+    color: rgb(11, 63, 63);
+}
+.modal-p ,h2{
+    margin: 10px auto;
+ }
+.active-modal{
+    display: flex;
+    
+}
+.active-modal .modal{
+    animation: modal .9s;
+}
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-60px ,0);
+    }
+    to{
+        opacity: 9;
+        transform: translate3d(0, 0 ,0);
+    }
+}
+
+
+.btns{
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+    
+}
+.btns button{
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor:pointer;
+    
+}
+.btnOk{
+    background-color: blue!important;
+   border-radius: 3px;
+   width: 80px;
+    
+}
+
+/*
+@media  (max-width:500px) {
+    .modal{
+        padding:10px;
+        width: 80%;
+    }
+    .modal-p .btn button{
+        font-size:smaller;
+    }
+}
+
+
+.body-wrapper{
+    display: none;
+backdrop-filter: blur(3.5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+*/

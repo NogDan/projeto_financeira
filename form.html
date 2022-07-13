@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="form.css">
+
+    <div class="total  ">
+
+
+
+        <header>
+            <div class="titulo">
+                <a href="principal.html"><img src="imagens/logo-original.jpg" class="img-titulo" alt=""></a>
+            </div>
+
+            <div class="titulo-h2">
+                <h2>Simule e envie para uma análise sem compromisso.</h2>
+            </div>
+        </header>
+
+        <div class="container-total">
+
+
+
+
+            <div class="slogan">
+                <h1 class="slogan-h1">Veja como funciona.</h1>
+                <p class="slogan-p">O emprestimo da Zão financeira é diferenciado, trabalhamos com um formato diferente
+                    em que o fator predominante é a faixa etária , ou seja, os juros são calculados em prol da idade do
+                    cliente.</p><br><br>
+                <p class="slogan-p">Veja abaixo:</p>
+                <ul class="slogan-ul">
+                    <li>Idade entre 18 A 25 anos taxa de juros de<span class="porcento"> 0.10%</span></li><br>
+                    <li>Idade entre 26 A 35 anos taxa de juros de <span class="porcento">0.12%</span></li><br>
+                    <li>Idade entre 36 A 45 anos taxa de juros de <span class="porcento">0.14%</span></li><br>
+                    <li>Idade entre 46 A 55 anos taxa de juros de <span class="porcento">0.16%</span></li><br>
+                    <li>Idade de 56 anos ou acima taxa de juros de <span class="porcento">0.18%</span></li><br>
+                </ul>
+            </div>
+
+            <div class="container  ">
+                <div class="form">
+                    <form id="form">
+                        <div>
+                            <input type="text" id="nome" class="ipt-placeholder" placeholder="Nome">
+                            <div>
+                                <div>
+                                    <input type="text" id="sobrenome" class="ipt-placeholder" placeholder="Sobrenome">
+                                </div>
+                                <div>
+                                    <input type="text" autocomplete="off" maxlength="14" id="cpf" class="ipt-placeholder"
+                                        placeholder="Insira seu CPF">
+                                </div>
+                                <div>
+                                    <input type="number" id="idade" class="ipt-placeholder" placeholder="Idade">
+                                </div>
+                                <div>
+                                    <input type="email" id="email" class="ipt-placeholder" placeholder="E-mail"><br>
+                                    <small class="small" id="textemail"></small>
+                                </div>
+                                <div>
+                                    <input type="number" id="valor" class="ipt-placeholder"
+                                        placeholder="Valor emprestimo R$">
+                                </div>
+                                <div>
+                                    <input type="number" id="meses" class="ipt-placeholder"
+                                        placeholder="Em quantos meses?">
+                                </div>
+                                <button type="submit" class="button" onclick="enviar()"> Simular</button>
+                                <button type="reset" class="button" onclick="limpar()"> Limpar</button>
+                            </div>
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="container-result ">
+                <div id="res" class="res">
+                 
+                </div>
+
+                <div class="button-enviar-form">
+                    <button onclick="envAnalise()" class="btn-analise">Enviar para análise</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal-container bblur">
+
+            <div class="modal">
+                <h2>Concluído</h2>
+                <hr />
+                <p class="modal-p">Sua solicitação foi enviada para análise,em breve enviaremos um email com o retorno.</p>
+                <hr />
+                <div class="btns">
+                    <a href="principal.html"><button class="btnOk" onclick="closeModal()">OK</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+
+
+
+<script src="form.js"></script>
+
+</html>
